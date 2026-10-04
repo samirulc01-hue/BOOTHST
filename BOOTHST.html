@@ -1,0 +1,2806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BOOTHST</title>
+  <style>
+    @font-face {
+          font-family: "Archivo Black";
+          src: url(data:font/woff;base64,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) format("woff");
+          font-weight: 400 900;
+          font-style: normal;
+          font-display: block;
+        }
+
+    :root {
+      --ink: #000;
+      --paper: #fff;
+      --red: #d63a3a;
+      --display: "Archivo Black", "Arial Black", Impact, sans-serif;
+      --lift: 0 0.5cqw 1.5cqw rgba(0, 0, 0, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      background: #f2f2f2;
+      color: var(--ink);
+      font-family: var(--display);
+    }
+
+    button,
+    input {
+      font: inherit;
+      color: inherit;
+    }
+
+    .paper {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .stage {
+      position: relative;
+      z-index: 1;
+      container-type: inline-size;
+      width: min(100vw, calc(100dvh * 910 / 514));
+      aspect-ratio: 910 / 514;
+    }
+
+    .header {
+      position: absolute;
+      inset: 0 0 auto 0;
+      z-index: 3;
+    }
+
+    .title {
+      position: absolute;
+      top: 3.4cqw;
+      left: 0;
+      right: 0;
+      margin: 0;
+      text-align: center;
+      font-size: 3.45cqw;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      transform: scaleY(1.11);
+      animation: title-in 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    .title .soft,
+    .title .softer {
+      display: inline-block;
+    }
+    .title .soft { filter: blur(0.1cqw); }
+    .title .softer { filter: blur(0.25cqw); opacity: 0.95; }
+
+    @keyframes title-in {
+      from { opacity: 0; transform: translateY(-1.2cqw) scaleY(1.11); }
+      to { opacity: 1; transform: scaleY(1.11); }
+    }
+
+    .round-button {
+      display: grid;
+      place-items: center;
+      width: 3.4cqw;
+      height: 3.4cqw;
+      padding: 0;
+      background: var(--paper);
+      border: 0;
+      border-radius: 50%;
+      box-shadow: var(--lift);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    }
+    .round-button svg {
+      width: 56%;
+      height: 56%;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .round-button:hover:not(:disabled) { transform: scale(1.08); }
+    .round-button:active:not(:disabled) { transform: scale(0.94); }
+    .round-button:disabled { opacity: 0.45; cursor: not-allowed; }
+    .round-button:focus-visible,
+    .pill-button:focus-visible,
+    .tab:focus-visible,
+    .chip:focus-visible,
+    .card:focus-visible,
+    .filter:focus-visible,
+    .swatch:focus-visible,
+    .shutter:focus-visible { outline: 3px solid #0d99ff; outline-offset: 3px; }
+
+    .sound-button {
+      position: absolute;
+      top: 3cqw;
+      left: 4cqw;
+    }
+    .sound-button .speaker { fill: currentColor; stroke: none; }
+    .sound-button .muted { display: none; }
+    .sound-button.off .waves { display: none; }
+    .sound-button.off .muted { display: inline; }
+
+    .tabs {
+      position: absolute;
+      top: 2.8cqw;
+      right: 4cqw;
+      display: flex;
+      gap: 0.3cqw;
+      padding: 0.35cqw;
+      background: var(--paper);
+      border-radius: 999px;
+      box-shadow: var(--lift);
+    }
+
+    .tab {
+      padding: 0.7cqw 1.3cqw;
+      font-size: 0.85cqw;
+      text-transform: uppercase;
+      white-space: nowrap;
+      background: transparent;
+      border: 0;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+    }
+    .tab:hover:not(.on) { background: rgba(0, 0, 0, 0.08); }
+    .tab:active { transform: scale(0.95); }
+    .tab.on { color: var(--paper); background: var(--ink); }
+
+    .view {
+      position: absolute;
+      inset: 0;
+      transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0s;
+    }
+    .view.off {
+      opacity: 0;
+      transform: translateY(1.4cqw) scale(0.985);
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+    }
+
+    .window {
+      position: absolute;
+      top: 10.4cqw;
+      left: 26.9cqw;
+      width: 46.2cqw;
+      height: 43.2cqw;
+      overflow: hidden;
+      background: #000;
+      border-radius: 1.1cqw;
+      box-shadow: 0 0 0 0.9cqw var(--paper), 0 1.6cqw 3.6cqw rgba(0, 0, 0, 0.32);
+    }
+
+    .camera {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: filter 0.4s ease, transform 0.4s ease;
+    }
+    .camera.blurry {
+      transform: scale(1.06);
+      filter: blur(1.6cqw) brightness(0.7);
+    }
+
+    #source {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .grid {
+      --pitch: 2.64cqw;
+      --line: max(1px, 0.12cqw);
+      --tone: rgba(255, 255, 255, 0.45);
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(to left, var(--tone) var(--line), transparent var(--line)),
+        linear-gradient(to top, var(--tone) var(--line), transparent var(--line));
+      background-size: var(--pitch) var(--pitch);
+    }
+
+    .guide {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 82%;
+      height: 46%;
+      transform: translate(-50%, -50%);
+      border: 0.16cqw dashed rgba(255, 255, 255, 0.85);
+      border-radius: 0.6cqw;
+      box-shadow: 0 0 0 100cqw rgba(0, 0, 0, 0.32);
+      pointer-events: none;
+      transition: width 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), height 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), border-radius 0.5s ease;
+    }
+    .guide.round { border-radius: 50%; }
+
+    .counter {
+      position: absolute;
+      top: 1.1cqw;
+      left: 50%;
+      padding: 0.45cqw 1.3cqw;
+      transform: translateX(-50%);
+      font-size: 0.95cqw;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 999px;
+      box-shadow: 0 0.3cqw 1cqw rgba(0, 0, 0, 0.4);
+    }
+    .counter.bump { animation: bump 0.45s cubic-bezier(0.2, 1.5, 0.4, 1); }
+
+    @keyframes bump {
+      0% { transform: translateX(-50%) scale(1); }
+      40% { transform: translateX(-50%) scale(1.22); }
+      100% { transform: translateX(-50%) scale(1); }
+    }
+
+    .slots {
+      position: absolute;
+      right: 0.66cqw;
+      bottom: 2.6cqw;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9cqw;
+    }
+
+    .slot {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 5.8cqw;
+      height: 5.6cqw;
+      padding: 0;
+      overflow: hidden;
+      background: var(--paper);
+      border: 0;
+      border-radius: 0.8cqw;
+      box-shadow: 0 0.3cqw 0.9cqw rgba(0, 0, 0, 0.35);
+      cursor: default;
+      transition: transform 0.25s ease;
+    }
+    .slot::before {
+      content: "";
+      position: absolute;
+      inset: 0.35cqw;
+      border: 1px dashed #9a9a9a;
+      border-radius: 0.5cqw;
+    }
+    .slot-label {
+      position: relative;
+      font-size: 0.62cqw;
+      line-height: 1.1;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .slot.filled { cursor: pointer; }
+    .slot.filled::before { display: none; }
+    .slot.filled:hover { transform: scale(1.08); }
+    .slot canvas {
+      width: calc(100% - 0.5cqw);
+      height: calc(100% - 0.5cqw);
+      border-radius: 0.55cqw;
+    }
+    .slot.pop { animation: pop 0.55s cubic-bezier(0.2, 1.4, 0.4, 1); }
+
+    @keyframes pop {
+      from { transform: scale(0.4); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .notice {
+      position: absolute;
+      top: 44%;
+      right: 10%;
+      left: 10%;
+      display: none;
+      margin: 0;
+      text-align: center;
+      font-size: 1.1cqw;
+      color: #fff;
+    }
+    .notice.show { display: block; }
+
+    .countdown {
+      position: absolute;
+      inset: 0;
+      display: none;
+      place-items: center;
+      pointer-events: none;
+    }
+    .countdown.show { display: grid; }
+
+    .pulse {
+      grid-area: 1 / 1;
+      width: 15cqw;
+      height: 15cqw;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0) 70%);
+      animation: pulse 1s ease-out both;
+    }
+
+    .digit {
+      grid-area: 1 / 1;
+      font-size: 15cqw;
+      line-height: 1;
+      color: #fff;
+      text-shadow: 0 0.8cqw 2.4cqw rgba(0, 0, 0, 0.45);
+      animation: digit 1s cubic-bezier(0.2, 0.9, 0.3, 1) both;
+    }
+
+    @keyframes pulse {
+      from { transform: scale(0.5); opacity: 1; }
+      to { transform: scale(2.4); opacity: 0; }
+    }
+
+    @keyframes digit {
+      0% { transform: scale(1.8); opacity: 0; }
+      25% { transform: scale(1); opacity: 1; }
+      80% { transform: scale(0.96); opacity: 1; }
+      100% { transform: scale(0.75); opacity: 0; }
+    }
+
+    .controls {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .controls > * { pointer-events: auto; }
+
+    .gray {
+      position: absolute;
+      bottom: 2.6cqw;
+      width: 4.2cqw;
+      height: 4.2cqw;
+      color: #fff;
+      background: rgba(150, 150, 150, 0.88);
+    }
+    .upload-button { left: calc(50% - 14.5cqw); }
+    .retake-button { left: calc(50% - 9.5cqw); }
+    .flip-button { left: calc(50% + 5.3cqw); }
+
+    .shutter {
+      position: absolute;
+      bottom: 1.3cqw;
+      left: 50%;
+      width: 6.8cqw;
+      height: 6.8cqw;
+      padding: 0;
+      transform: translateX(-50%);
+      background: #ce3737;
+      border: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .shutter::before {
+      content: "";
+      position: absolute;
+      inset: 10%;
+      border: 0.3cqw solid #fff;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #e04c4c, #980f0f);
+    }
+    .shutter:hover:not(:disabled) { transform: translateX(-50%) scale(1.06); }
+    .shutter:active:not(:disabled) { transform: translateX(-50%) scale(0.93); }
+    .shutter:not(:disabled) { animation: ready 2.6s ease-out infinite; }
+    .shutter:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    @keyframes ready {
+      0% { box-shadow: 0 0 0 0 rgba(214, 58, 58, 0.55); }
+      70%, 100% { box-shadow: 0 0 0 1.2cqw rgba(214, 58, 58, 0); }
+    }
+
+    .pill-button {
+      padding: 0.8cqw 1.6cqw;
+      font-size: 0.8cqw;
+      text-transform: uppercase;
+      white-space: nowrap;
+      background: var(--paper);
+      border: 0;
+      border-radius: 999px;
+      box-shadow: var(--lift);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .pill-button:hover:not(:disabled) { transform: translateY(-0.15cqw); }
+    .pill-button:active:not(:disabled) { transform: scale(0.96); }
+    .pill-button:disabled { opacity: 0.45; cursor: not-allowed; }
+    .pill-button.red { background: var(--red); }
+    .pill-button.ghost { box-shadow: none; background: rgba(0, 0, 0, 0.08); }
+
+    .strip-button {
+      position: absolute;
+      bottom: 3.1cqw;
+      left: calc(50% + 10.4cqw);
+      animation: pop 0.55s cubic-bezier(0.2, 1.4, 0.4, 1);
+    }
+
+    .flash {
+      position: absolute;
+      inset: 0;
+      background: #fff;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .gallery {
+      position: absolute;
+      top: 10.4cqw;
+      left: 4cqw;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-content: start;
+      gap: 1.1cqw;
+      width: 56cqw;
+      height: 43.2cqw;
+      padding: 0.9cqw;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45cqw;
+      padding: 0.9cqw;
+      text-align: left;
+      background: var(--paper);
+      border: 0;
+      border-radius: 1.2cqw;
+      box-shadow: 0 0.4cqw 1.2cqw rgba(0, 0, 0, 0.14);
+      cursor: pointer;
+      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease;
+    }
+    .card:hover { transform: translateY(-0.3cqw); box-shadow: 0 0.9cqw 2cqw rgba(0, 0, 0, 0.2); }
+    .card.on { box-shadow: 0 0 0 0.22cqw var(--ink), 0 0.9cqw 2.2cqw rgba(0, 0, 0, 0.26); }
+
+    .card-preview {
+      position: relative;
+      height: 15.5cqw;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 0.8cqw;
+    }
+    .card-preview canvas {
+      position: absolute;
+      inset: 0;
+      width: auto;
+      height: auto;
+      max-width: 90%;
+      max-height: 90%;
+      margin: auto;
+    }
+    .card-name { font-size: 0.9cqw; text-transform: uppercase; }
+    .card-meta { font-size: 0.62cqw; text-transform: uppercase; opacity: 0.55; }
+
+    .designer {
+      position: absolute;
+      top: 10.4cqw;
+      left: 62.2cqw;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7cqw;
+      width: 33.8cqw;
+      height: 43.2cqw;
+      padding: 1.3cqw;
+      overflow-y: auto;
+      background: var(--paper);
+      border-radius: 1.4cqw;
+      box-shadow: 0 0.8cqw 2.4cqw rgba(0, 0, 0, 0.2);
+      scrollbar-width: thin;
+    }
+
+    .panel-title {
+      margin: 0.3cqw 0 0;
+      font-size: 0.82cqw;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .panel-title:first-child { margin-top: 0; }
+
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5cqw;
+    }
+
+    .filter {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3cqw;
+      align-items: center;
+      padding: 0.3cqw;
+      font-size: 0.55cqw;
+      text-transform: uppercase;
+      white-space: nowrap;
+      background: transparent;
+      border: 0;
+      border-radius: 0.7cqw;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .filter canvas { width: 100%; height: auto; border-radius: 0.5cqw; box-shadow: 0 0.2cqw 0.6cqw rgba(0, 0, 0, 0.25); }
+    .filter:hover { transform: translateY(-0.15cqw); }
+    .filter.on { box-shadow: 0 0 0 0.2cqw var(--ink); }
+
+    .swatches,
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.55cqw;
+    }
+
+    .swatch {
+      position: relative;
+      width: 2cqw;
+      height: 2cqw;
+      padding: 0;
+      overflow: hidden;
+      border: 0.14cqw solid rgba(0, 0, 0, 0.22);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .swatch:hover { transform: scale(1.12); }
+    .swatch.on { box-shadow: 0 0 0 0.22cqw var(--paper), 0 0 0 0.42cqw var(--ink); }
+    .swatch.custom { background: conic-gradient(#e8262a, #f6d86b, #5bbf7a, #3b82f6, #a855f7, #e8262a); }
+    .swatch input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+
+    .chip {
+      padding: 0.45cqw 1cqw;
+      font-size: 0.65cqw;
+      text-transform: uppercase;
+      background: var(--paper);
+      border: 0.14cqw solid var(--ink);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+    .chip:active { transform: scale(0.94); }
+    .chip.on { color: var(--paper); background: var(--ink); }
+
+    .text-input {
+      width: 100%;
+      padding: 0.6cqw 0.9cqw;
+      font-size: 0.75cqw;
+      background: var(--paper);
+      border: 0.14cqw solid var(--ink);
+      border-radius: 0.7cqw;
+    }
+    .text-input:focus-visible { outline: 3px solid #0d99ff; outline-offset: 2px; }
+
+    .designer-actions {
+      display: flex;
+      gap: 0.8cqw;
+      justify-content: flex-end;
+      margin-top: auto;
+      padding-top: 0.6cqw;
+    }
+
+    .viewer {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: grid;
+      place-items: center;
+      background: rgba(10, 10, 10, 0.78);
+      backdrop-filter: blur(6px);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.35s ease, visibility 0s 0.35s;
+    }
+    .viewer.show {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.35s ease, visibility 0s;
+    }
+
+    .viewer-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.4vh;
+      transform: translateY(3vh) scale(0.96);
+      transition: transform 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.15);
+    }
+    .viewer.show .viewer-card { transform: none; }
+
+    .printer {
+      position: relative;
+      z-index: 2;
+      display: none;
+      width: min(44vh, 76vw);
+      height: 1.5vh;
+      margin-bottom: -2.6vh;
+      background: #111;
+      border-radius: 999px;
+      box-shadow: inset 0 0.3vh 0.6vh rgba(255, 255, 255, 0.2), 0 0.4vh 1.2vh rgba(0, 0, 0, 0.6);
+    }
+    .viewer[data-kind="strip"] .printer { display: block; }
+
+    .viewer-stage {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1vh;
+      box-shadow: 0 2vh 6vh rgba(0, 0, 0, 0.55);
+    }
+    .viewer-image {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 86vw;
+      max-height: 72vh;
+    }
+    .viewer[data-kind="strip"].show .viewer-image { animation: print-out 1.6s cubic-bezier(0.3, 0.7, 0.2, 1) both; }
+    .viewer[data-kind="photo"].show .viewer-image { animation: develop 0.8s ease both; }
+
+    @keyframes print-out {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+    @keyframes develop {
+      from { opacity: 0; filter: blur(1.2vh) brightness(1.5); }
+      to { opacity: 1; filter: none; }
+    }
+
+    .pfp-pair {
+      display: none;
+      align-items: center;
+      gap: 4vh;
+      padding: 3vh 4vh;
+      background: var(--paper);
+    }
+    .viewer[data-kind="pfp"] .pfp-pair { display: flex; }
+    .viewer[data-kind="pfp"] .viewer-image { display: none; }
+    .pfp-square,
+    .pfp-round {
+      width: 30vh;
+      height: 30vh;
+      object-fit: cover;
+      box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.3);
+    }
+    .pfp-square { border-radius: 1.2vh; }
+    .pfp-round { border-radius: 50%; }
+    .viewer[data-kind="pfp"].show .pfp-pair { animation: develop 0.8s ease both; }
+
+    .viewer-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4vh;
+      justify-content: center;
+    }
+    .viewer-actions .pill-button { font-size: max(12px, 1.9vh); padding: 1.2vh 2.6vh; }
+    .viewer-actions .pill-button.ghost { background: var(--paper); box-shadow: var(--lift); }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas class="paper" id="paper" aria-hidden="true"></canvas>
+
+  <main class="stage" id="stage">
+
+    <header class="header">
+      <button class="round-button sound-button" id="soundButton" type="button" aria-label="Sound on" aria-pressed="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path class="speaker" d="M4 9.5v5h3.6L12 18.5v-13L7.6 9.5H4z" />
+          <path class="waves" d="M15.5 9a4.2 4.2 0 0 1 0 6M18 6.6a7.6 7.6 0 0 1 0 10.8" />
+          <path class="muted" d="M15.5 9.5l5 5M20.5 9.5l-5 5" />
+        </svg>
+      </button>
+
+      <h1 class="title">BOOTH<span class="soft">S</span><span class="softer">T</span></h1>
+
+      <nav class="tabs" id="tabs" aria-label="Modes">
+        <button class="tab on" type="button" data-mode="booth">Photobooth</button>
+        <button class="tab" type="button" data-mode="pfp">Profile pic</button>
+        <button class="tab" type="button" data-mode="frames">Frames</button>
+      </nav>
+    </header>
+
+    <section class="view" id="boothView">
+      <div class="window" id="window">
+        <canvas class="camera" id="camera"></canvas>
+        <video id="source" autoplay playsinline muted></video>
+        <div class="grid"></div>
+        <div class="guide" id="guide"></div>
+        <div class="counter" id="counter"></div>
+        <div class="slots" id="slots"></div>
+        <p class="notice" id="notice"></p>
+
+        <div class="countdown" id="countdown">
+          <span class="pulse"></span>
+          <span class="digit" id="digit"></span>
+        </div>
+
+        <div class="controls">
+          <button class="round-button gray upload-button" id="uploadButton" type="button" aria-label="Upload photos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4m0 0L8 8m4-4 4 4M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" /></svg>
+          </button>
+          <button class="round-button gray retake-button" id="retakeButton" type="button" aria-label="Retake last photo" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.4-5.5M4.5 4v4.5H9" /></svg>
+          </button>
+          <button class="shutter" id="shutter" type="button" aria-label="Take photo" disabled></button>
+          <button class="round-button gray flip-button" id="flipButton" type="button" aria-label="Switch camera" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8.5A8 8 0 0 0 5.6 6.8M4 4v3.5h3.5M4 15.5a8 8 0 0 0 14.4 1.7M20 20v-3.5h-3.5" /></svg>
+          </button>
+          <button class="pill-button strip-button" id="stripButton" type="button" hidden>See strip</button>
+        </div>
+
+        <div class="flash" id="flash"></div>
+      </div>
+    </section>
+
+    <section class="view off" id="framesView">
+      <div class="gallery" id="gallery"></div>
+
+      <aside class="designer">
+        <h2 class="panel-title">Filter</h2>
+        <div class="filter-grid" id="filterGrid"></div>
+
+        <h2 class="panel-title">Frame color</h2>
+        <div class="swatches" id="paperSwatches"></div>
+
+        <h2 class="panel-title">Border color</h2>
+        <div class="swatches" id="edgeSwatches"></div>
+
+        <h2 class="panel-title">Icons</h2>
+        <div class="chip-row" id="iconChips"></div>
+
+        <h2 class="panel-title">Caption</h2>
+        <input class="text-input" id="captionInput" type="text" maxlength="18" placeholder="Add a caption" autocomplete="off" />
+
+        <div class="designer-actions">
+          <button class="pill-button ghost" id="resetButton" type="button">Reset</button>
+          <button class="pill-button red" id="useButton" type="button">Use this frame</button>
+        </div>
+      </aside>
+    </section>
+
+  </main>
+
+  <input type="file" id="fileInput" accept="image/*" multiple hidden />
+
+  <div class="viewer" id="viewer" aria-hidden="true">
+    <div class="viewer-card">
+      <div class="printer" id="printer"></div>
+      <div class="viewer-stage" id="viewerStage">
+        <img class="viewer-image" id="viewerImage" alt="" />
+        <div class="pfp-pair" id="pfpPair">
+          <img class="pfp-square" id="pfpSquare" alt="Square profile picture" />
+          <img class="pfp-round" id="pfpRound" alt="Round profile picture" />
+        </div>
+      </div>
+      <div class="viewer-actions">
+        <button class="pill-button" id="viewerSave" type="button">Save</button>
+        <button class="pill-button" id="viewerAlt" type="button" hidden>Save square</button>
+        <button class="pill-button" id="viewerRetake" type="button" hidden>Retake</button>
+        <button class="pill-button ghost" id="viewerClose" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const COUNTDOWN_SECONDS = 3;
+    const PREVIEW_WIDTH = 960;
+    const DISPLAY_FONT = '"Archivo Black", "Arial Black", Impact, sans-serif';
+  </script>
+
+  <script>
+    const PAPER = {
+      width: 1600,
+      height: 900,
+      fieldWidth: 400,
+      fieldHeight: 225,
+      gridPitch: 26,
+      seed: 11
+    };
+
+    function createNoise(seed) {
+      const cells = new Float32Array(256 * 256);
+      let state = seed >>> 0;
+      for (let i = 0; i < cells.length; i++) {
+        state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+        cells[i] = state / 4294967296;
+      }
+
+      return (x, y) => {
+        const ix = Math.floor(x);
+        const iy = Math.floor(y);
+        const fx = x - ix;
+        const fy = y - iy;
+        const u = fx * fx * (3 - 2 * fx);
+        const v = fy * fy * (3 - 2 * fy);
+        const at = (cx, cy) => cells[((cy & 255) << 8) | (cx & 255)];
+        const top = at(ix, iy) + (at(ix + 1, iy) - at(ix, iy)) * u;
+        const bottom = at(ix, iy + 1) + (at(ix + 1, iy + 1) - at(ix, iy + 1)) * u;
+        return top + (bottom - top) * v;
+      };
+    }
+
+    function randomSource(seed) {
+      let state = seed >>> 0;
+      return () => {
+        state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+        return state / 4294967296;
+      };
+    }
+
+    function makeFolds(random, count) {
+      const folds = [];
+      for (let i = 0; i < count; i++) {
+        const angle = (random() - 0.5) * 1.7 + (random() < 0.2 ? Math.PI / 2 : 0);
+        folds.push({
+          x: random() * PAPER.fieldWidth,
+          y: random() * PAPER.fieldHeight,
+          cos: Math.cos(angle),
+          sin: Math.sin(angle),
+          length: 35 + random() * 90,
+          reach: 7 + random() * 16,
+          push: (random() < 0.5 ? -1 : 1) * (0.45 + random() * 0.55),
+          pleat: random() < 0.5
+        });
+      }
+      return folds;
+    }
+
+    function buildCreases(random) {
+      const { fieldWidth, fieldHeight } = PAPER;
+      const heights = new Float32Array(fieldWidth * fieldHeight);
+      const folds = makeFolds(random, 120);
+
+      for (const fold of folds) {
+        for (let y = 0; y < fieldHeight; y++) {
+          for (let x = 0; x < fieldWidth; x++) {
+            const dx = x - fold.x;
+            const dy = y - fold.y;
+            const along = dx * fold.cos + dy * fold.sin;
+            const across = -dx * fold.sin + dy * fold.cos;
+            const window = 1 - (along / fold.length) ** 2;
+            if (window <= 0) continue;
+
+            const ramp = fold.pleat
+              ? Math.max(-fold.reach, Math.min(fold.reach, across))
+              : Math.min(Math.abs(across), fold.reach);
+
+            heights[y * fieldWidth + x] += fold.push * ramp * window * window;
+          }
+        }
+      }
+      return heights;
+    }
+
+    function shadeCreases(heights) {
+      const { fieldWidth, fieldHeight } = PAPER;
+      const field = document.createElement('canvas');
+      field.width = fieldWidth;
+      field.height = fieldHeight;
+      const fieldContext = field.getContext('2d');
+      const image = fieldContext.createImageData(fieldWidth, fieldHeight);
+
+      for (let y = 1; y < fieldHeight - 1; y++) {
+        for (let x = 1; x < fieldWidth - 1; x++) {
+          const i = y * fieldWidth + x;
+          const slopeX = (heights[i + 1] - heights[i - 1]) / 2;
+          const slopeY = (heights[i + fieldWidth] - heights[i - fieldWidth]) / 2;
+          const shade = 0.962 - slopeX * 0.046 - slopeY * 0.036;
+          const value = Math.max(204, Math.min(255, shade * 255));
+
+          const p = i * 4;
+          image.data[p] = value;
+          image.data[p + 1] = value;
+          image.data[p + 2] = value;
+          image.data[p + 3] = 255;
+        }
+      }
+      fieldContext.putImageData(image, 0, 0);
+      return field;
+    }
+
+    function drawWarpedGrid(context, noise) {
+      const { width, height, gridPitch } = PAPER;
+      const bend = gridPitch * 1.3;
+
+      context.globalCompositeOperation = 'multiply';
+      context.strokeStyle = 'rgb(226, 226, 226)';
+      context.lineWidth = 2.6;
+      context.lineJoin = 'round';
+
+      for (let gx = -gridPitch; gx < width + gridPitch; gx += gridPitch) {
+        context.beginPath();
+        for (let y = -10; y <= height + 10; y += 8) {
+          const x = gx + (noise(gx * 0.0035 + y * 0.0006 + 20, y * 0.0035) - 0.5) * bend;
+          if (y === -10) context.moveTo(x, y);
+          else context.lineTo(x, y);
+        }
+        context.stroke();
+      }
+
+      for (let gy = -gridPitch; gy < height + gridPitch; gy += gridPitch) {
+        context.beginPath();
+        for (let x = -10; x <= width + 10; x += 8) {
+          const y = gy + (noise(x * 0.0035 + 40, gy * 0.0035 + x * 0.0006) - 0.5) * bend;
+          if (x === -10) context.moveTo(x, y);
+          else context.lineTo(x, y);
+        }
+        context.stroke();
+      }
+    }
+
+    function paintPaper(canvas) {
+      const { width, height, seed } = PAPER;
+      canvas.width = width;
+      canvas.height = height;
+      const context = canvas.getContext('2d');
+      const noise = createNoise(seed);
+
+      const creases = shadeCreases(buildCreases(randomSource(seed)));
+      context.imageSmoothingQuality = 'high';
+      context.drawImage(creases, 0, 0, width, height);
+
+      drawWarpedGrid(context, noise);
+    }
+  </script>
+
+  <script>
+    const sound = { on: true, context: null };
+
+    function audioContext() {
+      if (!sound.context) sound.context = new (window.AudioContext || window.webkitAudioContext)();
+      if (sound.context.state === 'suspended') sound.context.resume();
+      return sound.context;
+    }
+
+    function tone(frequency, length, { type = 'sine', volume = 0.12, delay = 0, glide = 0 } = {}) {
+      const context = audioContext();
+      const start = context.currentTime + delay;
+      const oscillator = context.createOscillator();
+      const gain = context.createGain();
+
+      oscillator.type = type;
+      oscillator.frequency.setValueAtTime(frequency, start);
+      if (glide) oscillator.frequency.exponentialRampToValueAtTime(Math.max(40, frequency + glide), start + length);
+
+      gain.gain.setValueAtTime(0.0001, start);
+      gain.gain.exponentialRampToValueAtTime(volume, start + 0.012);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start + length);
+
+      oscillator.connect(gain).connect(context.destination);
+      oscillator.start(start);
+      oscillator.stop(start + length + 0.03);
+    }
+
+    function noise(length, volume, delay = 0, cutoff = 4000) {
+      const context = audioContext();
+      const start = context.currentTime + delay;
+      const buffer = context.createBuffer(1, Math.ceil(context.sampleRate * length), context.sampleRate);
+      const data = buffer.getChannelData(0);
+      for (let i = 0; i < data.length; i++) data[i] = Math.random() * 2 - 1;
+
+      const source = context.createBufferSource();
+      const filter = context.createBiquadFilter();
+      const gain = context.createGain();
+      source.buffer = buffer;
+      filter.type = 'lowpass';
+      filter.frequency.value = cutoff;
+      gain.gain.setValueAtTime(volume, start);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start + length);
+
+      source.connect(filter).connect(gain).connect(context.destination);
+      source.start(start);
+    }
+
+    const SOUNDS = {
+      click: () => tone(720, 0.06, { volume: 0.06, type: 'triangle' }),
+      tick: () => tone(920, 0.11, { volume: 0.1 }),
+      shutter: () => {
+        noise(0.07, 0.22, 0, 6000);
+        noise(0.09, 0.16, 0.09, 2500);
+        tone(140, 0.1, { type: 'square', volume: 0.05 });
+      },
+      pop: () => tone(520, 0.12, { volume: 0.08, glide: 380, type: 'triangle' }),
+      done: () => [523, 659, 784, 1047].forEach((note, i) => tone(note, 0.3, { volume: 0.08, delay: i * 0.09, type: 'triangle' })),
+      print: () => {
+        for (let i = 0; i < 10; i++) noise(0.05, 0.07, i * 0.09, 1800);
+      },
+      swap: () => tone(380, 0.14, { volume: 0.06, glide: 300, type: 'triangle' })
+    };
+
+    function playSound(name) {
+      if (!sound.on) return;
+      try {
+        SOUNDS[name]();
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  </script>
+
+  <script>
+    const GRAIN_TILE = 256;
+    let grainPattern = null;
+
+    function fillLayer(context, width, height, fill, mode, alpha = 1) {
+      context.save();
+      context.globalCompositeOperation = mode;
+      context.globalAlpha = alpha;
+      context.fillStyle = fill;
+      context.fillRect(0, 0, width, height);
+      context.restore();
+    }
+
+    function addLift(context, width, height, color, alpha = 1) {
+      fillLayer(context, width, height, color, 'lighten', alpha);
+    }
+
+    function addVignette(context, width, height, strength) {
+      const gradient = context.createRadialGradient(
+        width / 2, height / 2, height * 0.25,
+        width / 2, height / 2, Math.hypot(width, height) * 0.55
+      );
+      gradient.addColorStop(0, 'rgba(0, 0, 0, 0)');
+      gradient.addColorStop(1, `rgba(0, 0, 0, ${strength})`);
+      fillLayer(context, width, height, gradient, 'source-over');
+    }
+
+    function addLeak(context, width, height, color, x, y, radius) {
+      const gradient = context.createRadialGradient(x * width, y * height, 0, x * width, y * height, radius * width);
+      gradient.addColorStop(0, color);
+      gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      fillLayer(context, width, height, gradient, 'screen');
+    }
+
+    function addGlow(context, width, height, alpha, blur) {
+      context.save();
+      context.globalCompositeOperation = 'screen';
+      context.globalAlpha = alpha;
+      context.filter = `blur(${(blur * width) / 960}px)`;
+      context.drawImage(context.canvas, 0, 0);
+      context.restore();
+    }
+
+    function makeGrainPattern(context) {
+      const tile = document.createElement('canvas');
+      tile.width = GRAIN_TILE;
+      tile.height = GRAIN_TILE;
+      const tileContext = tile.getContext('2d');
+      const image = tileContext.createImageData(GRAIN_TILE, GRAIN_TILE);
+
+      for (let i = 0; i < image.data.length; i += 4) {
+        const value = Math.random() * 255;
+        image.data[i] = value;
+        image.data[i + 1] = value;
+        image.data[i + 2] = value;
+        image.data[i + 3] = 255;
+      }
+      tileContext.putImageData(image, 0, 0);
+      return context.createPattern(tile, 'repeat');
+    }
+
+    function addGrain(context, width, height, alpha) {
+      if (!grainPattern) grainPattern = makeGrainPattern(context);
+
+      const scale = Math.max(0.5, width / 960);
+      context.save();
+      context.globalCompositeOperation = 'overlay';
+      context.globalAlpha = alpha;
+      context.scale(scale, scale);
+      context.translate(-Math.random() * GRAIN_TILE, -Math.random() * GRAIN_TILE);
+      context.fillStyle = grainPattern;
+      context.fillRect(0, 0, width / scale + GRAIN_TILE, height / scale + GRAIN_TILE);
+      context.restore();
+    }
+
+    const LOOKS = [
+      {
+        id: 'natural',
+        name: 'Natural',
+        css: 'none'
+      },
+      {
+        id: 'sunkissed',
+        name: 'Sun Kissed',
+        css: 'sepia(0.7) saturate(2.1) hue-rotate(-24deg) brightness(0.96) contrast(1.14)',
+        paint(context, width, height) {
+          fillLayer(context, width, height, 'rgb(255, 150, 80)', 'multiply', 0.55);
+          fillLayer(context, width, height, 'rgba(255, 90, 20, 0.25)', 'soft-light');
+          addLeak(context, width, height, 'rgba(255, 150, 40, 0.28)', 1, 0.08, 0.7);
+          addGlow(context, width, height, 0.12, 10);
+          addVignette(context, width, height, 0.6);
+          addGrain(context, width, height, 0.1);
+        }
+      },
+      {
+        id: 'goldenhour',
+        name: 'Golden Hour',
+        css: 'sepia(0.3) saturate(1.4) brightness(1.06) contrast(1.04)',
+        paint(context, width, height) {
+          fillLayer(context, width, height, 'rgba(255, 175, 70, 0.26)', 'soft-light');
+          addLeak(context, width, height, 'rgba(255, 200, 110, 0.35)', 0.9, 0.1, 0.8);
+          addGlow(context, width, height, 0.14, 10);
+          addVignette(context, width, height, 0.3);
+        }
+      },
+      {
+        id: 'film',
+        name: 'Film',
+        css: 'contrast(1.06) saturate(1.08) sepia(0.12) brightness(1.02)',
+        paint(context, width, height) {
+          fillLayer(context, width, height, 'rgba(255, 190, 140, 0.14)', 'soft-light');
+          addLift(context, width, height, 'rgb(34, 34, 34)', 0.8);
+          addVignette(context, width, height, 0.28);
+          addGrain(context, width, height, 0.16);
+        }
+      },
+      {
+        id: 'softmatte',
+        name: 'Soft Matte',
+        css: 'contrast(0.88) brightness(1.07) saturate(0.88)',
+        paint(context, width, height) {
+          addLift(context, width, height, 'rgb(64, 62, 64)', 0.9);
+          addGlow(context, width, height, 0.14, 8);
+        }
+      },
+      {
+        id: 'noir',
+        name: 'Noir',
+        css: 'grayscale(1) contrast(1.45) brightness(0.88)',
+        paint(context, width, height) {
+          addVignette(context, width, height, 0.6);
+          addGrain(context, width, height, 0.12);
+        }
+      },
+      {
+        id: 'redroom',
+        name: 'Red Room',
+        css: 'grayscale(1) contrast(1.3) brightness(0.9)',
+        paint(context, width, height) {
+          fillLayer(context, width, height, 'rgb(255, 38, 34)', 'multiply');
+          addLift(context, width, height, 'rgb(64, 0, 0)', 0.9);
+          addVignette(context, width, height, 0.55);
+          addGrain(context, width, height, 0.12);
+        }
+      },
+      {
+        id: 'chrome',
+        name: 'Chrome',
+        css: 'grayscale(0.4) contrast(1.15) brightness(1.08) saturate(0.9)',
+        paint(context, width, height) {
+          fillLayer(context, width, height, 'rgba(140, 180, 255, 0.28)', 'soft-light');
+          addLift(context, width, height, 'rgb(20, 22, 28)', 0.8);
+          addGlow(context, width, height, 0.26, 12);
+        }
+      }
+    ];
+
+    function findLook(id) {
+      return LOOKS.find((look) => look.id === id) || LOOKS[0];
+    }
+
+    function drawLook(context, source, width, height, id, options = {}) {
+      const { time = 0, mirror = true, extra = '' } = options;
+      const look = findLook(id);
+      const css = [look.css === 'none' ? '' : look.css, extra].filter(Boolean).join(' ') || 'none';
+
+      context.save();
+      context.filter = css;
+      if (mirror) {
+        context.translate(width, 0);
+        context.scale(-1, 1);
+      }
+      context.drawImage(source, 0, 0, width, height);
+      context.restore();
+
+      if (look.paint) look.paint(context, width, height, time);
+    }
+  </script>
+
+  <script>
+    const MAX_PHOTO_WIDTH = 1920;
+    const BURST_FRAMES = 6;
+    const MOTION_LIMIT = 60;
+    const EDGE_LIMIT = 28;
+    const SHARPEN_AMOUNT = 0.7;
+    const TARGET_BRIGHTNESS = 118;
+
+    const frameCanvas = document.createElement('canvas');
+    const frameContext = frameCanvas.getContext('2d', { willReadFrequently: true });
+    const meter = document.createElement('canvas');
+    meter.width = 32;
+    meter.height = 24;
+    const meterContext = meter.getContext('2d', { willReadFrequently: true });
+    const light = { gain: 1, ticks: 0 };
+
+    function readLight(video) {
+      light.ticks += 1;
+      if (light.ticks % 6 !== 0) return light.gain;
+
+      meterContext.drawImage(video, 0, 0, 32, 24);
+      const pixels = meterContext.getImageData(0, 0, 32, 24).data;
+      let total = 0;
+      for (let i = 0; i < pixels.length; i += 4) {
+        total += pixels[i] * 0.299 + pixels[i + 1] * 0.587 + pixels[i + 2] * 0.114;
+      }
+
+      const average = Math.max(8, total / (pixels.length / 4));
+      const wanted = Math.min(1.6, Math.max(0.8, TARGET_BRIGHTNESS / average));
+      light.gain += (wanted - light.gain) * 0.12;
+      return light.gain;
+    }
+
+    function nextVideoFrame(video) {
+      return new Promise((resolve) => {
+        if ('requestVideoFrameCallback' in video) {
+          video.requestVideoFrameCallback(() => resolve());
+        } else {
+          setTimeout(resolve, 40);
+        }
+      });
+    }
+
+    async function collectFrames(video, width, height, count) {
+      frameCanvas.width = width;
+      frameCanvas.height = height;
+
+      const frames = [];
+      for (let i = 0; i < count; i++) {
+        if (i > 0) await nextVideoFrame(video);
+        frameContext.drawImage(video, 0, 0, width, height);
+        frames.push(frameContext.getImageData(0, 0, width, height));
+      }
+      return frames;
+    }
+
+    function averageFrames(frames) {
+      const base = frames[Math.floor(frames.length / 2)];
+      const others = frames.filter((frame) => frame !== base);
+      const output = new Uint8ClampedArray(base.data);
+
+      for (let i = 0; i < output.length; i += 4) {
+        const r0 = base.data[i];
+        const g0 = base.data[i + 1];
+        const b0 = base.data[i + 2];
+        let r = r0;
+        let g = g0;
+        let b = b0;
+        let count = 1;
+
+        for (let f = 0; f < others.length; f++) {
+          const data = others[f].data;
+          const gap = Math.abs(data[i] - r0) + Math.abs(data[i + 1] - g0) + Math.abs(data[i + 2] - b0);
+          if (gap < MOTION_LIMIT) {
+            r += data[i];
+            g += data[i + 1];
+            b += data[i + 2];
+            count++;
+          }
+        }
+
+        output[i] = r / count;
+        output[i + 1] = g / count;
+        output[i + 2] = b / count;
+      }
+      return new ImageData(output, base.width, base.height);
+    }
+
+    function smoothNoise(image) {
+      const { data, width, height } = image;
+      const output = new Uint8ClampedArray(data);
+      const offsets = [-width - 1, -width, -width + 1, -1, 1, width - 1, width, width + 1].map((o) => o * 4);
+      const luma = (i) => (data[i] * 77 + data[i + 1] * 150 + data[i + 2] * 29) >> 8;
+
+      for (let y = 1; y < height - 1; y++) {
+        for (let x = 1; x < width - 1; x++) {
+          const i = (y * width + x) * 4;
+          const center = luma(i);
+          let r = data[i] * 2;
+          let g = data[i + 1] * 2;
+          let b = data[i + 2] * 2;
+          let total = 2;
+
+          for (let k = 0; k < 8; k++) {
+            const n = i + offsets[k];
+            const gap = Math.abs(luma(n) - center);
+            if (gap < EDGE_LIMIT) {
+              const weight = 1 - gap / EDGE_LIMIT;
+              r += data[n] * weight;
+              g += data[n + 1] * weight;
+              b += data[n + 2] * weight;
+              total += weight;
+            }
+          }
+
+          output[i] = r / total;
+          output[i + 1] = g / total;
+          output[i + 2] = b / total;
+        }
+      }
+      return new ImageData(output, width, height);
+    }
+
+    function autoLevels(image) {
+      const data = image.data;
+      const pixels = data.length / 4;
+      const histogram = new Uint32Array(256);
+      let sum = 0;
+
+      for (let i = 0; i < data.length; i += 4) {
+        const level = (data[i] * 77 + data[i + 1] * 150 + data[i + 2] * 29) >> 8;
+        histogram[level]++;
+        sum += level;
+      }
+
+      let low = 0;
+      let seen = 0;
+      while (low < 254 && seen + histogram[low] < pixels * 0.003) seen += histogram[low++];
+
+      let high = 255;
+      seen = 0;
+      while (high > 1 && seen + histogram[high] < pixels * 0.003) seen += histogram[high--];
+
+      if (high - low < 130) {
+        const middle = (high + low) / 2;
+        low = middle - 65;
+        high = middle + 65;
+      }
+
+      const spread = high - low;
+      const mean = Math.min(0.92, Math.max(0.08, (sum / pixels - low) / spread));
+      const gamma = Math.min(1.2, Math.max(0.8, Math.log(0.46) / Math.log(mean)));
+
+      const table = new Uint8Array(256);
+      for (let v = 0; v < 256; v++) {
+        const normal = Math.min(1, Math.max(0, (v - low) / spread));
+        table[v] = 255 * Math.pow(normal, gamma);
+      }
+
+      for (let i = 0; i < data.length; i += 4) {
+        data[i] = table[data[i]];
+        data[i + 1] = table[data[i + 1]];
+        data[i + 2] = table[data[i + 2]];
+      }
+      return image;
+    }
+
+    function sharpenCanvas(canvas, amount) {
+      const { width, height } = canvas;
+      const context = canvas.getContext('2d', { willReadFrequently: true });
+      const original = context.getImageData(0, 0, width, height);
+
+      const soft = document.createElement('canvas');
+      soft.width = width;
+      soft.height = height;
+      const softContext = soft.getContext('2d', { willReadFrequently: true });
+      softContext.filter = `blur(${Math.max(1, width / 1400)}px)`;
+      softContext.drawImage(canvas, 0, 0);
+      const blurred = softContext.getImageData(0, 0, width, height).data;
+
+      const data = original.data;
+      for (let i = 0; i < data.length; i += 4) {
+        for (let c = 0; c < 3; c++) {
+          const detail = data[i + c] - blurred[i + c];
+          if (detail > 2 || detail < -2) data[i + c] += detail * amount;
+        }
+      }
+      context.putImageData(original, 0, 0);
+    }
+
+    function enhanceCanvas(canvas) {
+      const context = canvas.getContext('2d', { willReadFrequently: true });
+      const image = autoLevels(context.getImageData(0, 0, canvas.width, canvas.height));
+      context.putImageData(image, 0, 0);
+      sharpenCanvas(canvas, SHARPEN_AMOUNT * 0.8);
+      return canvas;
+    }
+
+    async function captureStill(video) {
+      const scale = Math.min(1, MAX_PHOTO_WIDTH / video.videoWidth);
+      const width = Math.round(video.videoWidth * scale);
+      const height = Math.round(video.videoHeight * scale);
+
+      const frames = await collectFrames(video, width, height, BURST_FRAMES);
+      const image = autoLevels(smoothNoise(averageFrames(frames)));
+
+      const work = document.createElement('canvas');
+      work.width = width;
+      work.height = height;
+      work.getContext('2d', { willReadFrequently: true }).putImageData(image, 0, 0);
+      sharpenCanvas(work, SHARPEN_AMOUNT);
+
+      const result = document.createElement('canvas');
+      result.width = width;
+      result.height = height;
+      const context = result.getContext('2d');
+      context.translate(width, 0);
+      context.scale(-1, 1);
+      context.drawImage(work, 0, 0);
+      return result;
+    }
+
+    async function readUpload(file) {
+      const bitmap = await createImageBitmap(file);
+      const scale = Math.min(1, MAX_PHOTO_WIDTH / Math.max(bitmap.width, bitmap.height));
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.round(bitmap.width * scale);
+      canvas.height = Math.round(bitmap.height * scale);
+      canvas.getContext('2d', { willReadFrequently: true }).drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+      bitmap.close();
+      return enhanceCanvas(canvas);
+    }
+  </script>
+
+  <script>
+    const DUMMY_THEMES = [
+      { top: '#f0e1d3', bottom: '#c9a98f', body: '#3b3f4a', skin: '#e3d3c6', hair: '#2d2420', shift: -0.06 },
+      { top: '#dfe6f5', bottom: '#9fb4d8', body: '#4a3d52', skin: '#ecd9cc', hair: '#1f1a1a', shift: 0.05 },
+      { top: '#e6efdf', bottom: '#a6bf9a', body: '#2f3a36', skin: '#d9c1ad', hair: '#4a3426', shift: 0 },
+      { top: '#f7dfe6', bottom: '#d89bb0', body: '#33323a', skin: '#efdccf', hair: '#2a1f22', shift: 0.08 },
+      { top: '#e8e4f4', bottom: '#a79dc9', body: '#2e2c3a', skin: '#e0cbb9', hair: '#1b1718', shift: -0.04 },
+      { top: '#f6ecd2', bottom: '#d4b46a', body: '#41362c', skin: '#dcc3a8', hair: '#3a2a1e', shift: 0.03 }
+    ];
+
+    const dummyCache = [];
+
+    function makeDummy(index, width = 640, height = 360) {
+      const theme = DUMMY_THEMES[index % DUMMY_THEMES.length];
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const context = canvas.getContext('2d');
+      const centerX = width * (0.5 + theme.shift);
+
+      const background = context.createLinearGradient(0, 0, 0, height);
+      background.addColorStop(0, theme.top);
+      background.addColorStop(1, theme.bottom);
+      context.fillStyle = background;
+      context.fillRect(0, 0, width, height);
+
+      const glow = context.createRadialGradient(centerX, height * 0.4, 0, centerX, height * 0.4, width * 0.45);
+      glow.addColorStop(0, 'rgba(255, 255, 255, 0.5)');
+      glow.addColorStop(1, 'rgba(255, 255, 255, 0)');
+      context.fillStyle = glow;
+      context.fillRect(0, 0, width, height);
+
+      context.save();
+      context.shadowColor = 'rgba(0, 0, 0, 0.3)';
+      context.shadowBlur = height * 0.05;
+      context.shadowOffsetY = height * 0.02;
+
+      const shoulders = context.createLinearGradient(0, height * 0.6, 0, height);
+      shoulders.addColorStop(0, theme.body);
+      shoulders.addColorStop(1, '#14151a');
+      context.fillStyle = shoulders;
+      context.beginPath();
+      context.ellipse(centerX, height * 1.03, width * 0.27, height * 0.44, 0, 0, Math.PI * 2);
+      context.fill();
+
+      context.fillStyle = theme.skin;
+      context.fillRect(centerX - width * 0.035, height * 0.5, width * 0.07, height * 0.14);
+      context.restore();
+
+      context.fillStyle = 'rgba(0, 0, 0, 0.14)';
+      context.beginPath();
+      context.ellipse(centerX, height * 0.6, width * 0.05, height * 0.045, 0, 0, Math.PI);
+      context.fill();
+
+      const head = context.createRadialGradient(centerX - width * 0.03, height * 0.28, 0, centerX, height * 0.36, width * 0.12);
+      head.addColorStop(0, '#ffffff');
+      head.addColorStop(0.35, theme.skin);
+      head.addColorStop(1, '#b59f8f');
+      context.fillStyle = head;
+      context.beginPath();
+      context.ellipse(centerX, height * 0.36, width * 0.085, height * 0.2, 0, 0, Math.PI * 2);
+      context.fill();
+
+      context.fillStyle = theme.hair;
+      context.beginPath();
+      context.ellipse(centerX, height * 0.27, width * 0.092, height * 0.15, 0, Math.PI, Math.PI * 2);
+      context.fill();
+      context.beginPath();
+      context.ellipse(centerX - width * 0.085, height * 0.38, width * 0.022, height * 0.14, 0.12, 0, Math.PI * 2);
+      context.ellipse(centerX + width * 0.085, height * 0.38, width * 0.022, height * 0.14, -0.12, 0, Math.PI * 2);
+      context.fill();
+
+      return canvas;
+    }
+
+    function dummySource(index) {
+      if (!dummyCache[index]) dummyCache[index] = makeDummy(index);
+      return dummyCache[index];
+    }
+  </script>
+
+  <script>
+    const CHROME_STOPS = [
+      [0, '#ffffff'], [0.2, '#b9c3d3'], [0.38, '#2a303b'], [0.52, '#f2f6fb'],
+      [0.7, '#7b8798'], [0.86, '#1a1f29'], [1, '#dfe6f0']
+    ];
+
+    function withShadow(context, size, draw) {
+      context.save();
+      context.shadowColor = 'rgba(0, 0, 0, 0.35)';
+      context.shadowBlur = size * 0.14;
+      context.shadowOffsetY = size * 0.05;
+      draw();
+      context.restore();
+    }
+
+    function drawChromeSparkle(context, size) {
+      const half = size / 2;
+      const gradient = context.createLinearGradient(-half, -half, half, half);
+      CHROME_STOPS.forEach(([at, color]) => gradient.addColorStop(at, color));
+
+      const path = new Path2D();
+      path.moveTo(0, -half);
+      path.bezierCurveTo(half * 0.12, -half * 0.35, half * 0.35, -half * 0.12, half, 0);
+      path.bezierCurveTo(half * 0.35, half * 0.12, half * 0.12, half * 0.35, 0, half);
+      path.bezierCurveTo(-half * 0.12, half * 0.35, -half * 0.35, half * 0.12, -half, 0);
+      path.bezierCurveTo(-half * 0.35, -half * 0.12, -half * 0.12, -half * 0.35, 0, -half);
+      path.closePath();
+
+      withShadow(context, size, () => {
+        context.fillStyle = gradient;
+        context.fill(path);
+      });
+
+      context.save();
+      context.clip(path);
+      const shine = context.createRadialGradient(-half * 0.1, -half * 0.12, 0, 0, 0, half * 0.55);
+      shine.addColorStop(0, 'rgba(255, 255, 255, 0.85)');
+      shine.addColorStop(1, 'rgba(255, 255, 255, 0)');
+      context.fillStyle = shine;
+      context.fillRect(-half, -half, size, size);
+      context.restore();
+
+      context.lineWidth = Math.max(1, size * 0.012);
+      context.strokeStyle = 'rgba(15, 18, 25, 0.55)';
+      context.stroke(path);
+    }
+
+    function drawDoodleStar(context, size) {
+      const radius = size / 2;
+      const points = [];
+      for (let i = 0; i < 10; i++) {
+        const angle = -Math.PI / 2 + (i * Math.PI) / 5;
+        const length = i % 2 === 0 ? radius : radius * 0.46;
+        const wobble = 1 + Math.sin(i * 2.7) * 0.05;
+        points.push([Math.cos(angle) * length * wobble, Math.sin(angle) * length * wobble]);
+      }
+
+      const trace = (scale) => {
+        context.beginPath();
+        points.forEach(([x, y], i) => (i === 0 ? context.moveTo(x * scale, y * scale) : context.lineTo(x * scale, y * scale)));
+        context.closePath();
+      };
+
+      withShadow(context, size, () => {
+        trace(1);
+        context.fillStyle = '#d8438d';
+        context.lineJoin = 'round';
+        context.lineWidth = size * 0.07;
+        context.strokeStyle = '#d8438d';
+        context.fill();
+        context.stroke();
+      });
+
+      trace(0.7);
+      context.lineJoin = 'round';
+      context.lineWidth = size * 0.07;
+      context.strokeStyle = '#f7a8cf';
+      context.stroke();
+    }
+
+    function drawBow(context, size) {
+      const half = size / 2;
+      const tile = Math.max(4, size * 0.1);
+
+      const pattern = document.createElement('canvas');
+      pattern.width = tile * 2;
+      pattern.height = tile * 2;
+      const patternContext = pattern.getContext('2d');
+      patternContext.fillStyle = '#ffffff';
+      patternContext.fillRect(0, 0, tile * 2, tile * 2);
+      patternContext.fillStyle = 'rgba(205, 38, 62, 0.85)';
+      patternContext.fillRect(0, 0, tile, tile * 2);
+      patternContext.fillRect(0, 0, tile * 2, tile);
+      patternContext.fillStyle = 'rgba(205, 38, 62, 0.55)';
+      patternContext.fillRect(0, 0, tile, tile);
+
+      const shape = new Path2D();
+      shape.moveTo(0, 0);
+      shape.bezierCurveTo(-half * 0.25, -half * 0.75, -half * 1.0, -half * 0.7, -half * 0.98, -half * 0.05);
+      shape.bezierCurveTo(-half * 0.95, half * 0.6, -half * 0.3, half * 0.6, 0, 0);
+      shape.moveTo(0, 0);
+      shape.bezierCurveTo(half * 0.25, -half * 0.75, half * 1.0, -half * 0.7, half * 0.98, -half * 0.05);
+      shape.bezierCurveTo(half * 0.95, half * 0.6, half * 0.3, half * 0.6, 0, 0);
+      shape.moveTo(-half * 0.1, half * 0.05);
+      shape.lineTo(-half * 0.42, half * 0.95);
+      shape.lineTo(-half * 0.12, half * 0.82);
+      shape.lineTo(0, half * 0.12);
+      shape.moveTo(half * 0.1, half * 0.05);
+      shape.lineTo(half * 0.42, half * 0.95);
+      shape.lineTo(half * 0.12, half * 0.82);
+      shape.lineTo(0, half * 0.12);
+
+      const knot = new Path2D();
+      knot.roundRect(-half * 0.17, -half * 0.2, half * 0.34, half * 0.4, half * 0.1);
+
+      withShadow(context, size, () => {
+        context.fillStyle = context.createPattern(pattern, 'repeat');
+        context.fill(shape);
+        context.fill(knot);
+      });
+
+      context.lineJoin = 'round';
+      context.lineWidth = Math.max(1, size * 0.025);
+      context.strokeStyle = '#b3243f';
+      context.stroke(shape);
+      context.stroke(knot);
+    }
+
+    function drawHeartIcon(context, size) {
+      const scale = size / 100;
+      const gradient = context.createLinearGradient(0, -40 * scale, 0, 45 * scale);
+      gradient.addColorStop(0, '#ff7aa2');
+      gradient.addColorStop(1, '#d92b5d');
+
+      const path = new Path2D();
+      path.moveTo(0, 42 * scale);
+      path.bezierCurveTo(-60 * scale, 0, -40 * scale, -48 * scale, 0, -20 * scale);
+      path.bezierCurveTo(40 * scale, -48 * scale, 60 * scale, 0, 0, 42 * scale);
+
+      withShadow(context, size, () => {
+        context.fillStyle = gradient;
+        context.fill(path);
+      });
+
+      context.fillStyle = 'rgba(255, 255, 255, 0.6)';
+      context.beginPath();
+      context.ellipse(-22 * scale, -20 * scale, 9 * scale, 5 * scale, -0.6, 0, Math.PI * 2);
+      context.fill();
+    }
+
+    const ICONS = {
+      chrome: { name: 'Chrome', draw: drawChromeSparkle },
+      star: { name: 'Star', draw: drawDoodleStar },
+      bow: { name: 'Bow', draw: drawBow },
+      heart: { name: 'Heart', draw: drawHeartIcon }
+    };
+
+    function drawIcon(context, type, x, y, size, rotation) {
+      const icon = ICONS[type];
+      if (!icon) return;
+
+      context.save();
+      context.translate(x, y);
+      context.rotate(rotation);
+      icon.draw(context, size);
+      context.restore();
+    }
+  </script>
+
+  <script>
+    const CHROME_SHADES = [
+      '#fbfcfe', '#bfc7d4', '#7d8696', '#e8edf4', '#a1aab9', '#ffffff',
+      '#8b94a4', '#dce2eb', '#b4bccb', '#f4f7fb', '#7a8393', '#e3e8f0'
+    ];
+
+    const DEFAULT_STICKERS = [
+      { fx: 0.12, fy: 0.05, size: 0.15, rotation: -0.3 },
+      { fx: 0.9, fy: 0.5, size: 0.11, rotation: 0.35 },
+      { fx: 0.1, fy: 0.94, size: 0.13, rotation: 0.2 }
+    ];
+
+    function inkFor(hex) {
+      const value = parseInt(hex.slice(1), 16);
+      const red = (value >> 16) & 255;
+      const green = (value >> 8) & 255;
+      const blue = value & 255;
+      return red * 0.299 + green * 0.587 + blue * 0.114 > 150 ? '#000000' : '#ffffff';
+    }
+
+    function roundedPath(context, x, y, width, height, radius) {
+      const r = Math.min(radius, width / 2, height / 2);
+      context.beginPath();
+      context.moveTo(x + r, y);
+      context.arcTo(x + width, y, x + width, y + height, r);
+      context.arcTo(x + width, y + height, x, y + height, r);
+      context.arcTo(x, y + height, x, y, r);
+      context.arcTo(x, y, x + width, y, r);
+      context.closePath();
+    }
+
+    function coverInto(context, source, x, y, width, height) {
+      const scale = Math.max(width / source.width, height / source.height);
+      const drawWidth = source.width * scale;
+      const drawHeight = source.height * scale;
+      context.drawImage(source, x + (width - drawWidth) / 2, y + (height - drawHeight) / 2, drawWidth, drawHeight);
+    }
+
+    function makeTile(source, width, height, filterId, radius) {
+      const cover = document.createElement('canvas');
+      cover.width = width;
+      cover.height = height;
+      coverInto(cover.getContext('2d'), source, 0, 0, width, height);
+
+      const tile = document.createElement('canvas');
+      tile.width = width;
+      tile.height = height;
+      const context = tile.getContext('2d');
+      if (radius > 0) {
+        roundedPath(context, 0, 0, width, height, radius);
+        context.clip();
+      }
+      drawLook(context, cover, width, height, filterId, { mirror: false });
+      return tile;
+    }
+
+    function paintWordmark(context, text, centerX, centerY, size, color, maxWidth) {
+      const letters = [...text];
+      let fontSize = size;
+      context.font = `900 ${fontSize}px ${DISPLAY_FONT}`;
+
+      const measure = () => letters.reduce((sum, letter) => sum + context.measureText(letter).width - fontSize * 0.01, 0);
+      if (maxWidth && measure() > maxWidth) {
+        fontSize = (fontSize * maxWidth) / measure();
+        context.font = `900 ${fontSize}px ${DISPLAY_FONT}`;
+      }
+
+      context.save();
+      context.textAlign = 'left';
+      context.textBaseline = 'alphabetic';
+      context.fillStyle = color;
+
+      const widths = letters.map((letter) => context.measureText(letter).width - fontSize * 0.01);
+      const total = widths.reduce((sum, width) => sum + width, 0);
+      const capHeight = context.measureText('B').actualBoundingBoxAscent;
+      const baseline = centerY + capHeight / 2;
+      const softCount = letters.length > 3 ? 2 : 0;
+      const blurs = [0.03, 0.075];
+
+      let x = centerX - total / 2;
+      letters.forEach((letter, index) => {
+        const step = index - (letters.length - softCount);
+        context.save();
+        if (softCount && step >= 0) {
+          context.filter = `blur(${fontSize * blurs[step]}px)`;
+          context.globalAlpha = step === 0 ? 1 : 0.95;
+        }
+        context.fillText(letter, x, baseline);
+        context.restore();
+        x += widths[index];
+      });
+      context.restore();
+    }
+
+    function paintDate(context, x, y, size, color) {
+      const date = new Date().toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' });
+      context.save();
+      context.font = `${size}px ${DISPLAY_FONT}`;
+      context.textAlign = 'center';
+      context.fillStyle = color;
+      context.globalAlpha = 0.75;
+      context.fillText(date.toUpperCase(), x, y);
+      context.restore();
+    }
+
+    function paintFooter(context, geometry, style, centerY) {
+      const ink = inkFor(style.paper);
+      paintWordmark(context, style.caption || 'BOOTHST', geometry.width / 2, centerY, 34, ink, geometry.width * 0.7);
+      paintDate(context, geometry.width / 2, centerY + 34, 15, ink);
+    }
+
+    function paintWatermark(context, geometry, style) {
+      context.save();
+      context.font = `20px ${DISPLAY_FONT}`;
+      context.textAlign = 'right';
+      context.fillStyle = '#ffffff';
+      context.globalAlpha = 0.85;
+      context.shadowColor = 'rgba(0, 0, 0, 0.5)';
+      context.shadowBlur = 6;
+      context.fillText((style.caption || 'boothst').toLowerCase(), geometry.width - 18, geometry.height - 16);
+      context.restore();
+    }
+
+    function fillPaper(context, geometry, style) {
+      context.fillStyle = style.paper;
+      context.fillRect(0, 0, geometry.width, geometry.height);
+    }
+
+    function stackCells(count, x, y, width, height, gap) {
+      return Array.from({ length: count }, (_, i) => ({ x, y: y + i * (height + gap), w: width, h: height }));
+    }
+
+    const FRAMES = [
+      {
+        id: 'boothst',
+        name: 'BOOTHST',
+        shots: 4,
+        width: 904,
+        paper: '#ffffff',
+        edge: '#000000',
+        radius: 0,
+        edgeWidth: 0,
+        inset: 8,
+        shadow: false,
+        geometry() {
+          return { width: 904, height: 2584, cells: stackCells(4, 0, 232, 904, 492, 48) };
+        },
+        paintBackground: fillPaper,
+        paintForeground(context, geometry, style) {
+          const ink = inkFor(style.paper);
+          paintWordmark(context, 'BOOTHST', geometry.width / 2, 116, 104, ink);
+          paintWordmark(context, style.caption || 'BOOTHST', geometry.width / 2, geometry.height - 120, 104, ink, geometry.width * 0.8);
+        }
+      },
+      {
+        id: 'classic',
+        name: 'Classic Strip',
+        shots: 4,
+        width: 600,
+        paper: '#ffffff',
+        edge: '#111111',
+        radius: 6,
+        edgeWidth: 4,
+        inset: 0,
+        shadow: true,
+        geometry() {
+          return { width: 600, height: 1528, cells: stackCells(4, 30, 30, 540, 340, 16) };
+        },
+        paintBackground: fillPaper,
+        paintForeground(context, geometry, style) {
+          paintFooter(context, geometry, style, geometry.height - 70);
+        }
+      },
+      {
+        id: 'sunkissed',
+        name: 'Sun Kissed',
+        shots: 3,
+        width: 624,
+        paper: '#140a06',
+        edge: '#140a06',
+        radius: 0,
+        edgeWidth: 3,
+        inset: 0,
+        shadow: false,
+        filter: 'sunkissed',
+        geometry() {
+          return { width: 624, height: 1832, cells: stackCells(3, 12, 12, 600, 600, 4) };
+        },
+        paintBackground: fillPaper,
+        paintForeground: paintWatermark
+      },
+      {
+        id: 'redroom',
+        name: 'Red Room',
+        shots: 3,
+        width: 624,
+        paper: '#050000',
+        edge: '#050000',
+        radius: 0,
+        edgeWidth: 3,
+        inset: 0,
+        shadow: false,
+        filter: 'redroom',
+        geometry() {
+          return { width: 624, height: 1094, cells: stackCells(3, 12, 12, 600, 354, 4) };
+        },
+        paintBackground: fillPaper,
+        paintForeground: paintWatermark
+      },
+      {
+        id: 'fourup',
+        name: 'Four Up',
+        shots: 4,
+        width: 632,
+        paper: '#ffffff',
+        edge: '#ffffff',
+        radius: 0,
+        edgeWidth: 3,
+        inset: 0,
+        shadow: false,
+        geometry() {
+          const cells = [];
+          for (let row = 0; row < 2; row++) {
+            for (let col = 0; col < 2; col++) cells.push({ x: 14 + col * 304, y: 14 + row * 404, w: 300, h: 400 });
+          }
+          return { width: 632, height: 832, cells };
+        },
+        paintBackground: fillPaper,
+        paintForeground: paintWatermark
+      },
+      {
+        id: 'duo',
+        name: 'Sticker Duo',
+        shots: 2,
+        width: 540,
+        paper: '#ffffff',
+        edge: '#ffffff',
+        radius: 0,
+        edgeWidth: 4,
+        inset: 0,
+        shadow: true,
+        stickers: [
+          { fx: 0.17, fy: 0.21, size: 0.17, rotation: -0.25, type: 'star' },
+          { fx: 0.82, fy: 0.54, size: 0.15, rotation: 0.12, type: 'bow' }
+        ],
+        geometry() {
+          return {
+            width: 540,
+            height: 960,
+            cells: [{ x: 76, y: 182, w: 388, h: 290 }, { x: 76, y: 494, w: 388, h: 290 }]
+          };
+        },
+        paintBackground: fillPaper,
+        paintForeground(context, geometry, style) {
+          if (!style.caption) return;
+          paintWordmark(context, style.caption, geometry.width / 2, geometry.height - 110, 30, inkFor(style.paper), geometry.width * 0.7);
+        }
+      },
+      {
+        id: 'polaroid',
+        name: 'Polaroid',
+        shots: 1,
+        width: 600,
+        paper: '#ffffff',
+        edge: '#d9d9d9',
+        radius: 4,
+        edgeWidth: 2,
+        inset: 0,
+        shadow: false,
+        geometry() {
+          return { width: 600, height: 800, cells: [{ x: 76, y: 76, w: 448, h: 540 }] };
+        },
+        paintBackground(context, geometry, style) {
+          context.save();
+          context.shadowColor = 'rgba(0, 0, 0, 0.3)';
+          context.shadowBlur = 28;
+          context.shadowOffsetY = 10;
+          roundedPath(context, 40, 40, 520, 720, 10);
+          context.fillStyle = style.paper;
+          context.fill();
+          context.restore();
+        },
+        paintForeground(context, geometry, style) {
+          paintWordmark(context, style.caption || 'BOOTHST', geometry.width / 2, 690, 30, inkFor(style.paper), 360);
+        }
+      },
+      {
+        id: 'sixgrid',
+        name: 'Six Grid',
+        shots: 6,
+        width: 600,
+        paper: '#ffffff',
+        edge: '#111111',
+        radius: 4,
+        edgeWidth: 3,
+        inset: 0,
+        shadow: true,
+        geometry() {
+          const cells = [];
+          for (let row = 0; row < 3; row++) {
+            for (let col = 0; col < 2; col++) cells.push({ x: 28 + col * 279, y: 28 + row * 213, w: 265, h: 199 });
+          }
+          return { width: 600, height: 743, cells };
+        },
+        paintBackground: fillPaper,
+        paintForeground(context, geometry, style) {
+          paintFooter(context, geometry, style, geometry.height - 52);
+        }
+      },
+      {
+        id: 'chrome',
+        name: 'Chrome Sparkle',
+        shots: 4,
+        width: 600,
+        paper: '#dfe5ee',
+        edge: '#0a0a0c',
+        radius: 10,
+        edgeWidth: 6,
+        inset: 0,
+        shadow: true,
+        stickers: [
+          { fx: 0.09, fy: 0.035, size: 0.16, rotation: -0.2, type: 'chrome' },
+          { fx: 0.93, fy: 0.3, size: 0.1, rotation: 0.3, type: 'chrome' },
+          { fx: 0.08, fy: 0.64, size: 0.11, rotation: 0.2, type: 'chrome' },
+          { fx: 0.91, fy: 0.94, size: 0.15, rotation: -0.25, type: 'chrome' }
+        ],
+        geometry() {
+          return { width: 600, height: 1746, cells: stackCells(4, 44, 44, 512, 384, 22) };
+        },
+        paintBackground(context, geometry, style) {
+          if (style.paperCustom) {
+            fillPaper(context, geometry, style);
+            return;
+          }
+          const gradient = context.createLinearGradient(0, 0, geometry.width * 0.5, geometry.height);
+          CHROME_SHADES.forEach((shade, i) => gradient.addColorStop(i / (CHROME_SHADES.length - 1), shade));
+          context.fillStyle = gradient;
+          context.fillRect(0, 0, geometry.width, geometry.height);
+        },
+        paintForeground(context, geometry, style) {
+          paintFooter(context, geometry, style, geometry.height - 52);
+        }
+      }
+    ];
+
+    function findFrame(id) {
+      return FRAMES.find((frame) => frame.id === id) || FRAMES[0];
+    }
+
+    function paintCell(context, frame, cell, source, style, filterId, scale) {
+      const inset = frame.inset;
+      const x = cell.x + inset;
+      const y = cell.y + inset;
+      const width = cell.w - inset * 2;
+      const height = cell.h - inset * 2;
+
+      if (frame.shadow || inset) {
+        context.save();
+        if (frame.shadow) {
+          context.shadowColor = 'rgba(0, 0, 0, 0.3)';
+          context.shadowBlur = 16;
+          context.shadowOffsetY = 6;
+        }
+        context.fillStyle = style.edge;
+        if (inset) context.fillRect(cell.x, cell.y, cell.w, cell.h);
+        else {
+          roundedPath(context, x, y, width, height, frame.radius);
+          context.fill();
+        }
+        context.restore();
+      }
+
+      if (source) {
+        const tile = makeTile(source, Math.max(1, Math.round(width * scale)), Math.max(1, Math.round(height * scale)), filterId, frame.radius * scale);
+        context.drawImage(tile, x, y, width, height);
+      } else {
+        context.fillStyle = 'rgba(0, 0, 0, 0.12)';
+        context.fillRect(x, y, width, height);
+      }
+
+      if (frame.edgeWidth) {
+        roundedPath(context, x, y, width, height, frame.radius);
+        context.lineWidth = frame.edgeWidth;
+        context.strokeStyle = style.edge;
+        context.stroke();
+      }
+    }
+
+    function paintStickers(context, frame, geometry, style) {
+      if (style.icon === 'none') return;
+
+      const defaults = frame.stickers || [];
+      const list = style.icon === 'default' ? defaults : defaults.length ? defaults : DEFAULT_STICKERS;
+
+      list.forEach((sticker) => {
+        const type = style.icon === 'default' ? sticker.type : style.icon;
+        drawIcon(context, type, sticker.fx * geometry.width, sticker.fy * geometry.height, sticker.size * geometry.width, sticker.rotation);
+      });
+    }
+
+    function renderFrame(frame, sources, style, filterId, targetWidth) {
+      const geometry = frame.geometry();
+      const scale = targetWidth / geometry.width;
+
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.round(geometry.width * scale);
+      canvas.height = Math.round(geometry.height * scale);
+      const context = canvas.getContext('2d');
+      context.scale(scale, scale);
+
+      frame.paintBackground(context, geometry, style);
+      geometry.cells.forEach((cell, index) => paintCell(context, frame, cell, sources[index], style, filterId, scale));
+      frame.paintForeground(context, geometry, style);
+      paintStickers(context, frame, geometry, style);
+
+      return canvas;
+    }
+
+    function renderTile(source, width, height, filterId, radius = 0) {
+      return makeTile(source, width, height, filterId, radius);
+    }
+  </script>
+
+  <script>
+    const PAPER_COLORS = ['#ffffff', '#f6efe6', '#111111', '#e8262a', '#f4b6c8', '#bcd4f6', '#cfe5c9', '#f6d86b'];
+    const EDGE_COLORS = ['#000000', '#ffffff', '#e8262a', '#1d3b8b', '#f08aa8', '#2b6b4f', '#caa86a', '#8c8c8c'];
+    const ICON_CHOICES = [['default', 'Default'], ['none', 'None'], ['chrome', 'Chrome'], ['star', 'Star'], ['bow', 'Bow'], ['heart', 'Heart']];
+    const WINDOW_ASPECT = 46.2 / 43.2;
+    const CARD_PREVIEW_WIDTH = 260;
+    const STRIP_EXPORT_WIDTH = 1400;
+
+    const byId = (id) => document.getElementById(id);
+    const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+    const el = {
+      video: byId('source'),
+      camera: byId('camera'),
+      guide: byId('guide'),
+      counter: byId('counter'),
+      slots: byId('slots'),
+      notice: byId('notice'),
+      countdown: byId('countdown'),
+      flash: byId('flash'),
+      shutter: byId('shutter'),
+      uploadButton: byId('uploadButton'),
+      retakeButton: byId('retakeButton'),
+      flipButton: byId('flipButton'),
+      stripButton: byId('stripButton'),
+      soundButton: byId('soundButton'),
+      fileInput: byId('fileInput'),
+      boothView: byId('boothView'),
+      framesView: byId('framesView'),
+      gallery: byId('gallery'),
+      filterGrid: byId('filterGrid'),
+      paperSwatches: byId('paperSwatches'),
+      edgeSwatches: byId('edgeSwatches'),
+      iconChips: byId('iconChips'),
+      captionInput: byId('captionInput'),
+      resetButton: byId('resetButton'),
+      useButton: byId('useButton'),
+      viewer: byId('viewer'),
+      viewerImage: byId('viewerImage'),
+      pfpSquare: byId('pfpSquare'),
+      pfpRound: byId('pfpRound'),
+      viewerSave: byId('viewerSave'),
+      viewerAlt: byId('viewerAlt'),
+      viewerRetake: byId('viewerRetake'),
+      viewerClose: byId('viewerClose')
+    };
+
+    const tabs = [...document.querySelectorAll('.tab')];
+    const viewContext = el.camera.getContext('2d');
+
+    const app = {
+      mode: 'booth',
+      frameId: 'boothst',
+      filter: 'natural',
+      paper: null,
+      edge: null,
+      icon: 'default',
+      caption: '',
+      shots: [],
+      pfp: null,
+      busy: false,
+      cameraReady: false,
+      cameras: [],
+      cameraIndex: 0,
+      viewing: null
+    };
+
+    const cards = new Map();
+    let filterButtons = [];
+    let paintQueued = false;
+
+    function currentFrame() {
+      return findFrame(app.frameId);
+    }
+
+    function frameStyle(frame) {
+      return {
+        paper: app.paper || frame.paper,
+        edge: app.edge || frame.edge,
+        paperCustom: Boolean(app.paper),
+        icon: app.icon,
+        caption: app.caption
+      };
+    }
+
+    function showNotice(text) {
+      el.notice.textContent = text;
+      el.notice.classList.add('show');
+    }
+
+    function download(href, filename) {
+      const link = document.createElement('a');
+      link.href = href;
+      link.download = filename;
+      link.click();
+    }
+
+    async function zoomOut(stream) {
+      const [track] = stream.getVideoTracks();
+      const capabilities = track.getCapabilities ? track.getCapabilities() : {};
+      if (!capabilities.zoom) return;
+
+      try {
+        await track.applyConstraints({ advanced: [{ zoom: capabilities.zoom.min }] });
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    async function startCamera(deviceId) {
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        showNotice("This browser can't use the camera. Open the site in Chrome.");
+        return;
+      }
+
+      const video = { width: { ideal: 1920 }, height: { ideal: 1080 }, aspectRatio: { ideal: 16 / 9 } };
+      if (deviceId) video.deviceId = { exact: deviceId };
+      else video.facingMode = 'user';
+
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video, audio: false });
+        await zoomOut(stream);
+
+        if (el.video.srcObject) el.video.srcObject.getTracks().forEach((track) => track.stop());
+        el.video.srcObject = stream;
+        await el.video.play();
+
+        el.camera.width = PREVIEW_WIDTH;
+        el.camera.height = Math.round((PREVIEW_WIDTH * el.video.videoHeight) / el.video.videoWidth);
+        el.notice.classList.remove('show');
+
+        const devices = await navigator.mediaDevices.enumerateDevices();
+        app.cameras = devices.filter((device) => device.kind === 'videoinput');
+        const activeId = stream.getVideoTracks()[0].getSettings().deviceId;
+        app.cameraIndex = Math.max(0, app.cameras.findIndex((device) => device.deviceId === activeId));
+
+        if (!app.cameraReady) {
+          app.cameraReady = true;
+          requestAnimationFrame(renderPreview);
+        }
+        refreshControls();
+      } catch (error) {
+        console.error(error);
+        showNotice("Camera blocked. Click the camera icon in Chrome's address bar, choose Allow, then reload.");
+      }
+    }
+
+    function flipCamera() {
+      if (app.cameras.length < 2 || app.busy) return;
+      const next = (app.cameraIndex + 1) % app.cameras.length;
+      playSound('swap');
+      startCamera(app.cameras[next].deviceId);
+    }
+
+    function renderPreview(time) {
+      requestAnimationFrame(renderPreview);
+      if (!app.cameraReady || !el.video.videoWidth || app.mode === 'frames') return;
+
+      const gain = readLight(el.video);
+      const extra = Math.abs(gain - 1) > 0.02 ? `brightness(${gain.toFixed(3)})` : '';
+      drawLook(viewContext, el.video, el.camera.width, el.camera.height, app.filter, { time, extra });
+    }
+
+    function updateGuide() {
+      let aspect = 1;
+      let round = false;
+
+      if (app.mode === 'pfp') {
+        round = true;
+      } else {
+        const cell = currentFrame().geometry().cells[0];
+        aspect = cell.w / cell.h;
+      }
+
+      const width = Math.min(1, aspect / WINDOW_ASPECT) * 88;
+      const height = Math.min(1, WINDOW_ASPECT / aspect) * 88;
+      el.guide.style.width = `${width}%`;
+      el.guide.style.height = `${height}%`;
+      el.guide.classList.toggle('round', round);
+    }
+
+    function refreshSlots(popIndex = -1) {
+      const frame = currentFrame();
+      const pfp = app.mode === 'pfp';
+      const count = pfp ? 0 : frame.shots;
+
+      el.slots.replaceChildren();
+      for (let i = 0; i < count; i++) {
+        const slot = document.createElement('button');
+        slot.type = 'button';
+        slot.className = 'slot';
+
+        if (app.shots[i]) {
+          slot.classList.add('filled');
+          if (i === popIndex) slot.classList.add('pop');
+          slot.setAttribute('aria-label', `View photo ${i + 1}`);
+          slot.appendChild(renderTile(app.shots[i], 160, 156, app.filter, 8));
+          slot.addEventListener('click', () => openPhoto(i));
+        } else {
+          slot.disabled = true;
+          slot.setAttribute('aria-label', `Photo ${i + 1}`);
+          slot.innerHTML = `<span class="slot-label">Photo ${i + 1}</span>`;
+        }
+        el.slots.appendChild(slot);
+      }
+
+      const text = `${app.shots.length}/${frame.shots}`;
+      if (el.counter.textContent !== text) {
+        el.counter.textContent = text;
+        el.counter.classList.remove('bump');
+        void el.counter.offsetWidth;
+        el.counter.classList.add('bump');
+      }
+      el.counter.hidden = pfp;
+    }
+
+    function refreshControls() {
+      const frame = currentFrame();
+      const pfp = app.mode === 'pfp';
+
+      el.shutter.disabled = !app.cameraReady || app.busy;
+      el.uploadButton.disabled = app.busy;
+      el.retakeButton.hidden = pfp || app.shots.length === 0;
+      el.retakeButton.disabled = app.busy;
+      el.stripButton.hidden = pfp || app.shots.length < frame.shots;
+      el.stripButton.disabled = app.busy;
+      el.flipButton.hidden = app.cameras.length < 2;
+      el.flipButton.disabled = app.busy;
+    }
+
+    async function runCountdown() {
+      el.camera.classList.add('blurry');
+      for (let number = COUNTDOWN_SECONDS; number > 0; number--) {
+        el.countdown.innerHTML = `<span class="pulse"></span><span class="digit">${number}</span>`;
+        el.countdown.classList.add('show');
+        playSound('tick');
+        await wait(1000);
+      }
+      el.countdown.classList.remove('show');
+      el.camera.classList.remove('blurry');
+    }
+
+    function flashWindow() {
+      el.flash.style.transition = 'none';
+      el.flash.style.opacity = '1';
+      void el.flash.offsetWidth;
+      el.flash.style.transition = 'opacity 0.7s ease-out';
+      el.flash.style.opacity = '0';
+    }
+
+    async function shootStill() {
+      await runCountdown();
+      flashWindow();
+      playSound('shutter');
+      return captureStill(el.video);
+    }
+
+    function finishShot(slot) {
+      const frame = currentFrame();
+      refreshSlots(slot);
+      refreshControls();
+      playSound(app.shots.length >= frame.shots ? 'done' : 'pop');
+    }
+
+    async function takePhoto(index) {
+      if (!app.cameraReady || app.busy) return;
+
+      const frame = currentFrame();
+      let slot = index;
+      if (slot === undefined) {
+        if (app.shots.length >= frame.shots) {
+          app.shots = [];
+          refreshSlots();
+        }
+        slot = app.shots.length;
+      }
+
+      app.busy = true;
+      refreshControls();
+      const still = await shootStill();
+      app.shots[slot] = still;
+      app.busy = false;
+      finishShot(slot);
+    }
+
+    async function takePfp() {
+      if (!app.cameraReady || app.busy) return;
+
+      app.busy = true;
+      refreshControls();
+      app.pfp = await shootStill();
+      app.busy = false;
+      refreshControls();
+      playSound('done');
+      openPfp();
+    }
+
+    function onShutter() {
+      if (app.mode === 'pfp') takePfp();
+      else takePhoto();
+    }
+
+    async function handleUploads(files) {
+      const images = [...files].filter((file) => file.type.startsWith('image/'));
+      if (!images.length || app.busy || app.mode === 'frames') return;
+
+      app.busy = true;
+      refreshControls();
+
+      if (app.mode === 'pfp') {
+        app.pfp = await readUpload(images[0]);
+        app.busy = false;
+        refreshControls();
+        openPfp();
+        return;
+      }
+
+      const frame = currentFrame();
+      if (app.shots.length >= frame.shots) app.shots = [];
+
+      let last = -1;
+      for (const file of images) {
+        if (app.shots.length >= frame.shots) break;
+        app.shots.push(await readUpload(file));
+        last = app.shots.length - 1;
+      }
+
+      app.busy = false;
+      if (last >= 0) finishShot(last);
+      else refreshControls();
+    }
+
+    function showViewer(kind, saves, retake) {
+      app.viewing = { saves, retake };
+      el.viewer.dataset.kind = kind;
+      el.viewerSave.textContent = saves[0].label;
+      el.viewerAlt.hidden = saves.length < 2;
+      if (saves[1]) el.viewerAlt.textContent = saves[1].label;
+      el.viewerRetake.hidden = !retake;
+
+      el.viewer.classList.remove('show');
+      void el.viewer.offsetWidth;
+      el.viewer.classList.add('show');
+      el.viewer.setAttribute('aria-hidden', 'false');
+      if (kind === 'strip') playSound('print');
+    }
+
+    function closeViewer() {
+      el.viewer.classList.remove('show');
+      el.viewer.setAttribute('aria-hidden', 'true');
+      app.viewing = null;
+    }
+
+    function saveFrom(index) {
+      const save = app.viewing && app.viewing.saves[index];
+      if (save) download(save.make(), save.filename);
+    }
+
+    function retakeFromViewer() {
+      const retake = app.viewing && app.viewing.retake;
+      if (!retake) return;
+      closeViewer();
+      retake();
+    }
+
+    function openPhoto(index) {
+      const source = app.shots[index];
+      if (!source) return;
+
+      const height = Math.round((1280 * source.height) / source.width);
+      const picture = renderTile(source, 1280, height, app.filter).toDataURL('image/jpeg', 0.94);
+      el.viewerImage.src = picture;
+      showViewer(
+        'photo',
+        [{ label: 'Save photo', filename: `boothst-photo-${index + 1}.jpg`, make: () => picture }],
+        () => takePhoto(index)
+      );
+    }
+
+    function openStrip() {
+      const frame = currentFrame();
+      const canvas = renderFrame(frame, app.shots, frameStyle(frame), app.filter, STRIP_EXPORT_WIDTH);
+      const picture = canvas.toDataURL('image/png');
+      el.viewerImage.src = picture;
+      showViewer('strip', [{ label: 'Save strip', filename: `boothst-${frame.id}.png`, make: () => picture }], null);
+    }
+
+    function renderPfp(size, round) {
+      const canvas = document.createElement('canvas');
+      canvas.width = size;
+      canvas.height = size;
+      const context = canvas.getContext('2d');
+
+      if (round) {
+        context.beginPath();
+        context.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+        context.clip();
+      }
+      context.drawImage(renderTile(app.pfp, size, size, app.filter), 0, 0);
+      return canvas;
+    }
+
+    function openPfp() {
+      const preview = renderPfp(640, false).toDataURL('image/jpeg', 0.92);
+      el.pfpSquare.src = preview;
+      el.pfpRound.src = preview;
+      showViewer(
+        'pfp',
+        [
+          { label: 'Save round', filename: 'boothst-pfp-round.png', make: () => renderPfp(1024, true).toDataURL('image/png') },
+          { label: 'Save square', filename: 'boothst-pfp-square.png', make: () => renderPfp(1024, false).toDataURL('image/png') }
+        ],
+        () => takePfp()
+      );
+    }
+
+    function paintGallery() {
+      FRAMES.forEach((frame) => {
+        const selected = frame.id === app.frameId;
+        const style = selected
+          ? frameStyle(frame)
+          : { paper: frame.paper, edge: frame.edge, paperCustom: false, icon: 'default', caption: '' };
+        const filterId = selected ? app.filter : frame.filter || app.filter;
+        const sources = Array.from({ length: frame.shots }, (_, i) => dummySource(i));
+
+        const card = cards.get(frame.id);
+        card.querySelector('.card-preview').replaceChildren(renderFrame(frame, sources, style, filterId, CARD_PREVIEW_WIDTH));
+        card.classList.toggle('on', selected);
+      });
+    }
+
+    function queuePaint() {
+      if (paintQueued) return;
+      paintQueued = true;
+      requestAnimationFrame(() => {
+        paintQueued = false;
+        paintGallery();
+        syncDesigner();
+      });
+    }
+
+    function syncSwatches(container, colors, value) {
+      container.querySelectorAll('.swatch').forEach((swatch) => {
+        if (swatch.classList.contains('custom')) {
+          const custom = Boolean(value) && !colors.includes(value);
+          swatch.classList.toggle('on', custom);
+          swatch.style.background = custom ? value : '';
+        } else {
+          swatch.classList.toggle('on', swatch.dataset.color === value);
+        }
+      });
+    }
+
+    function syncDesigner() {
+      filterButtons.forEach((button) => button.classList.toggle('on', button.dataset.look === app.filter));
+      syncSwatches(el.paperSwatches, PAPER_COLORS, app.paper);
+      syncSwatches(el.edgeSwatches, EDGE_COLORS, app.edge);
+      el.iconChips.querySelectorAll('.chip').forEach((chip) => chip.classList.toggle('on', chip.dataset.icon === app.icon));
+      if (el.captionInput.value !== app.caption) el.captionInput.value = app.caption;
+    }
+
+    function applyFrame(id) {
+      const frame = findFrame(id);
+      if (frame.id !== app.frameId) {
+        app.frameId = frame.id;
+        app.paper = null;
+        app.edge = null;
+        app.icon = 'default';
+        if (frame.filter) app.filter = frame.filter;
+        if (app.shots.length > frame.shots) app.shots = app.shots.slice(0, frame.shots);
+      }
+      playSound('click');
+      queuePaint();
+    }
+
+    function setFilter(id) {
+      app.filter = id;
+      playSound('click');
+      queuePaint();
+    }
+
+    function buildGallery() {
+      FRAMES.forEach((frame) => {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = 'card';
+        card.innerHTML = `<span class="card-preview"></span><span class="card-name">${frame.name}</span><span class="card-meta">${frame.shots} ${frame.shots === 1 ? 'photo' : 'photos'}</span>`;
+        card.addEventListener('click', () => applyFrame(frame.id));
+        card.addEventListener('dblclick', () => {
+          applyFrame(frame.id);
+          setMode('booth');
+        });
+        el.gallery.appendChild(card);
+        cards.set(frame.id, card);
+      });
+    }
+
+    function buildFilterButtons() {
+      filterButtons = LOOKS.map((look) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'filter';
+        button.dataset.look = look.id;
+
+        const thumb = document.createElement('canvas');
+        thumb.width = 120;
+        thumb.height = 84;
+        drawLook(thumb.getContext('2d'), dummySource(1), 120, 84, look.id, { mirror: false });
+
+        button.appendChild(thumb);
+        button.appendChild(document.createTextNode(look.name));
+        button.addEventListener('click', () => setFilter(look.id));
+        el.filterGrid.appendChild(button);
+        return button;
+      });
+    }
+
+    function buildSwatches(container, colors, key) {
+      colors.forEach((color) => {
+        const swatch = document.createElement('button');
+        swatch.type = 'button';
+        swatch.className = 'swatch';
+        swatch.dataset.color = color;
+        swatch.style.background = color;
+        swatch.setAttribute('aria-label', `${key} ${color}`);
+        swatch.addEventListener('click', () => {
+          app[key] = color;
+          playSound('click');
+          queuePaint();
+        });
+        container.appendChild(swatch);
+      });
+
+      const custom = document.createElement('label');
+      custom.className = 'swatch custom';
+      custom.title = 'Pick any color';
+      const input = document.createElement('input');
+      input.type = 'color';
+      input.addEventListener('input', () => {
+        app[key] = input.value;
+        queuePaint();
+      });
+      custom.appendChild(input);
+      container.appendChild(custom);
+    }
+
+    function buildIconChips() {
+      ICON_CHOICES.forEach(([id, label]) => {
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'chip';
+        chip.dataset.icon = id;
+        chip.textContent = label;
+        chip.addEventListener('click', () => {
+          app.icon = id;
+          playSound('click');
+          queuePaint();
+        });
+        el.iconChips.appendChild(chip);
+      });
+    }
+
+    function resetDesign() {
+      const frame = currentFrame();
+      app.paper = null;
+      app.edge = null;
+      app.icon = 'default';
+      app.caption = '';
+      app.filter = frame.filter || 'natural';
+      playSound('click');
+      queuePaint();
+    }
+
+    function setMode(mode) {
+      if (app.busy || mode === app.mode) return;
+
+      const leavingFrames = app.mode === 'frames';
+      app.mode = mode;
+      tabs.forEach((tab) => tab.classList.toggle('on', tab.dataset.mode === mode));
+
+      const showFrames = mode === 'frames';
+      el.boothView.classList.toggle('off', showFrames);
+      el.framesView.classList.toggle('off', !showFrames);
+
+      if (showFrames) {
+        paintGallery();
+        syncDesigner();
+      } else {
+        refreshSlots();
+        updateGuide();
+        if (leavingFrames) el.camera.classList.remove('blurry');
+      }
+      refreshControls();
+      playSound('swap');
+    }
+
+    function toggleSound() {
+      sound.on = !sound.on;
+      el.soundButton.classList.toggle('off', !sound.on);
+      el.soundButton.setAttribute('aria-pressed', String(sound.on));
+      el.soundButton.setAttribute('aria-label', sound.on ? 'Sound on' : 'Sound off');
+      playSound('click');
+    }
+
+    function bindEvents() {
+      tabs.forEach((tab) => tab.addEventListener('click', () => setMode(tab.dataset.mode)));
+      el.soundButton.addEventListener('click', toggleSound);
+      el.shutter.addEventListener('click', onShutter);
+      el.retakeButton.addEventListener('click', () => takePhoto(app.shots.length - 1));
+      el.stripButton.addEventListener('click', openStrip);
+      el.flipButton.addEventListener('click', flipCamera);
+      el.uploadButton.addEventListener('click', () => el.fileInput.click());
+      el.fileInput.addEventListener('change', () => {
+        handleUploads(el.fileInput.files);
+        el.fileInput.value = '';
+      });
+
+      el.viewerSave.addEventListener('click', () => saveFrom(0));
+      el.viewerAlt.addEventListener('click', () => saveFrom(1));
+      el.viewerRetake.addEventListener('click', retakeFromViewer);
+      el.viewerClose.addEventListener('click', closeViewer);
+
+      el.resetButton.addEventListener('click', resetDesign);
+      el.useButton.addEventListener('click', () => setMode('booth'));
+      el.captionInput.addEventListener('input', () => {
+        app.caption = el.captionInput.value.trim();
+        queuePaint();
+      });
+
+      ['dragover', 'drop'].forEach((type) => window.addEventListener(type, (event) => event.preventDefault()));
+      window.addEventListener('drop', (event) => handleUploads(event.dataTransfer.files));
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeViewer();
+
+        const tag = document.activeElement.tagName;
+        const typing = tag === 'BUTTON' || tag === 'INPUT';
+        const open = el.viewer.classList.contains('show');
+        if (event.code === 'Space' && !typing && !open && app.mode !== 'frames') {
+          event.preventDefault();
+          onShutter();
+        }
+      });
+    }
+
+    paintPaper(byId('paper'));
+    buildGallery();
+    buildFilterButtons();
+    buildSwatches(el.paperSwatches, PAPER_COLORS, 'paper');
+    buildSwatches(el.edgeSwatches, EDGE_COLORS, 'edge');
+    buildIconChips();
+    bindEvents();
+    refreshSlots();
+    updateGuide();
+    refreshControls();
+    startCamera();
+  </script>
+</body>
+</html>
